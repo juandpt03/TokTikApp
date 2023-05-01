@@ -15,7 +15,7 @@ class LocalVideoModel {
 
   factory LocalVideoModel.fromJson(Map<String, dynamic> json) {
     return LocalVideoModel(
-      caption: json['caption'] ?? 'No name',
+      caption: json['name'] ?? 'No name',
       videoUrl: json['videoUrl'],
       likes: json['likes'] ?? 0,
       views: json['views'] ?? 0,
